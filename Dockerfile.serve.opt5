@@ -1,0 +1,15 @@
+FROM python:3.11-slim AS builder
+WORKDIR /build
+COPY requirements.txt .
+RUN python -m venv /opt/venv
+RUN /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
+
+FROM python:3.11-slim
+WORKDIR /app
+COPY --from=builder /opt/venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+ENV MODEL_PATH=/artifacts/model.joblib
+COPY src/ ./src/
+COPY data/sample.csv ./data/sample.csv
+ENTRYPOINT ["python", "-m", "src.predict"]
+CMD ["--input", "data/sample.csv"]

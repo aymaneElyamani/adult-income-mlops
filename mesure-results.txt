@@ -1,0 +1,46 @@
+Image                        adult-serve:naif
+Taille                       624 Mo
+Build a froid                112 s
+Rebuild apres modif.         106 s
+
+
+Image                        adult-serve:opt1
+Taille                       263 Mo
+Build a froid                108 s
+Rebuild apres modif.         130 s
+
+
+Image                        adult-serve:opt2
+Taille                       263 Mo
+Build a froid                159 s
+Rebuild apres modif.         15 s
+
+
+Image                        adult-serve:opt3
+Taille                       263 Mo
+Build a froid                678 s
+Rebuild apres modif.         5 s
+
+
+Image                        adult-serve:opt4
+Taille                       172 Mo
+Build a froid                154 s
+Rebuild apres modif.         16 s
+
+
+Image                        adult-serve:opt5
+Taille                       176 Mo
+Build a froid                208 s
+Rebuild apres modif.         18 s
+
+
+Image                        adult-serve:opt6
+Taille                       176 Mo
+Build a froid                253 s
+Rebuild apres modif.         30 s
+
+
+Image                        adult-serve:opt
+Taille                       176 Mo
+Build a froid                171 s
+Rebuild apres modif.         14 s

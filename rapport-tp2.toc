@@ -1,0 +1,42 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Contexte}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Prérequis et environnement de travail}{5}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Le projet : chaîne de traitement et implémentation}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Arborescence du dépôt}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Le jeu de données}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Entraînement : \texttt {src/train.py}}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Inférence : \texttt {src/predict.py}}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Le script de mesure : \texttt {benchmark.sh}}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Relevé des mesures}{9}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Axe I --- Conteneuriser un modèle IA}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Version naïve : le point de référence}{10}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Construction de l'image d'entraînement}{10}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Construction de l'image d'inférence}{11}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Sauvegarde des artefacts et première mesure}{12}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Optimisation 1 : base \texttt {python:3.11-slim}}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Optimisation 2 : ordonnancement des \texttt {COPY}}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Optimisation 3 : \texttt {.dockerignore}}{15}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Optimisation 4 : \texttt {pip install -{}-no-cache-dir}}{16}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Optimisation 5 : construction multi-étapes}{17}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Optimisation 6 : utilisateur non-root et \texttt {HEALTHCHECK}}{18}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Tableau de synthèse des mesures}{19}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Réponses aux trois questions du support}{20}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Question 1 --- Pourquoi la reconstruction est-elle presque égale à la construction à froid ?}{20}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Question 2 --- Quelle optimisation apporte le plus gros gain~?}{21}{subsection.3.9.2}%
+\contentsline {subsubsection}{Gain de taille}{21}{subsubsection*.21}%
+\contentsline {subsubsection}{Gain de temps de reconstruction}{21}{subsubsection*.22}%
+\contentsline {subsubsection}{Pourquoi ce ne sont pas les mêmes~?}{21}{subsubsection*.23}%
+\contentsline {subsection}{\numberline {3.9.3}Question 3 --- Analyse avec \texttt {dive}}{21}{subsection.3.9.3}%
+\contentsline {chapter}{\numberline {4}Axe II --- Orchestrer et sécuriser}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Orchestration avec Docker Compose}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Constat}{23}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Proposition}{23}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Justification du choix \texttt {service\_completed\_successfully}}{24}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Analyse de vulnérabilités avec Trivy}{24}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Résultats globaux}{24}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Analyse des vulnérabilités Python}{25}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Vulnérabilités Debian}{26}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Duplication des alertes : un signal trompeur}{26}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Plan de remédiation}{26}{subsection.4.2.5}%
+\contentsline {chapter}{\numberline {5}Conclusion}{28}{chapter.5}%

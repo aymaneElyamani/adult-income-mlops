@@ -1,0 +1,8 @@
+FROM python:3.11
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY src/ ./src/
+COPY data/adult.csv ./data/adult.csv
+RUN mkdir -p /artifacts
+CMD ["python", "-m", "src.train", "--data", "data/adult.csv", "--out", "/artifacts/model.joblib"]
