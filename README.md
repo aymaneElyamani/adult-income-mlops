@@ -5,7 +5,6 @@
 [![PDF](https://img.shields.io/badge/rapport-PDF-1F4E79?style=flat-square&logo=adobeacrobatreader&logoColor=white)](rapport-tp2.pdf)
 [![Docker](https://img.shields.io/badge/docker-28.5.1-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Trivy](https://img.shields.io/badge/trivy-scan-1F4E79?style=flat-square)](trivy.checks.txt)
-[![Licence](https://img.shields.io/badge/licence-TP-1E6B34?style=flat-square)](README.md)
 
 </div>
 
