@@ -8,6 +8,7 @@
 
 </div>
 
+
 ## Résumé
 
 Ce TP prend un classifieur de revenus (**Adult Income**, UCI) développé en
