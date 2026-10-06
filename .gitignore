@@ -1,0 +1,28 @@
+# --- LaTeX : fichiers générés (ne jamais commiter) ---
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.synctex(busy)
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- Projet ---
+.env
+.env.*
+.DS_Store
