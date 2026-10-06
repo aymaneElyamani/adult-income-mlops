@@ -1,6 +1,6 @@
 <div align="center">
 
-# TP 2 — Conteneuriser un modèle et optimiser son image
+# Conteneuriser un modèle et optimiser son image
 
 **Cloud Computing & Déploiement IA — Faculté des Sciences Semlalia (FSSM)**
 
